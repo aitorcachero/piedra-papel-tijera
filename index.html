@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>!Bienvenido al juego de Piedra, Papel o Tijera!</h2>
+    <div class="btn-comenzar">
+      <button id="btn-comenzar">JUGAR</button>
+    </div>
+    <div id="btn-jugador" style="display: flex; flex-direction: row">
+      <button id="btn-piedra" class="btn" disabled>PIEDRA</button>
+      <button id="btn-papel" class="btn" disabled>PAPEL</button>
+      <button id="btn-tijera" class="btn" disabled>TIJERA</button>
+    </div>
+    <p id="texto-resultado"></p>
+
+    <div id="table-score">
+      <table>
+        <tr>
+          <th id="nombre-jugador">JUGADOR</th>
+          <th>CPU</td>
+        </tr>
+        <tr>
+          <td id="score-player">0</th>
+          <td id="score-cpu">0</td>
+        </tr>
+      </table>
+
+      <button id="terminar" class="btn">TERMINAR</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.531);
+}
+
+h2 {
+  margin: 2rem;
+  text-align: center;
+  color: white;
+}
+.btn-comenzar {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+#btn-comenzar {
+  background-color: rgba(24, 86, 202, 0.459);
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  margin: 2rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  font-size: 14pt;
+}
+
+#btn-comenzar:hover {
+  background-color: green;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+#btn-jugador {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.btn {
+  opacity: 0;
+  background-color: rgba(24, 86, 202, 0.459);
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  margin: 2rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  transition: 0.5s;
+  font-size: 14pt;
+}
+
+.btn:hover {
+  background-color: green;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+#texto-resultado {
+  color: white;
+  text-align: center;
+  font-size: 18pt;
+}
+
+h1 {
+  margin: 4rem;
+  opacity: 0;
+  text-align: center;
+  color: white;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+table {
+  width: 15rem;
+  height: 5rem;
+  border: 10px solid black;
+  text-align: center;
+}
+
+#table-score {
+  opacity: 0;
+}
+
+table,
+th,
+td {
+  border: 2px solid;
+}
+
+th,
+td {
+  width: 15rem;
+  color: white;
+}
