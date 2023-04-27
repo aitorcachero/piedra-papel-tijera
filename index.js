@@ -59,7 +59,6 @@ piedra.addEventListener('click', () => {
     case num === 2:
       texto.style.color = '#7fff00';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Tu ganas`;
-
       JUGADOR++;
       scorePlayer.innerHTML = `${JUGADOR}`;
       scoreCpu.innerHTML = `${CPU}`;
@@ -90,9 +89,10 @@ papel.addEventListener('click', () => {
     case num === 0:
       texto.style.color = '#7fff00';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Tu ganas`;
+      JUGADOR++;
       scorePlayer.innerHTML = `${JUGADOR}`;
       scoreCpu.innerHTML = `${CPU}`;
-      JUGADOR++;
+
       break;
     case num === 1:
       texto.style.color = 'white';
