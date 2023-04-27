@@ -8,6 +8,8 @@ const texto = document.querySelector('#texto-resultado');
 const terminar = document.querySelector('#terminar');
 const score = document.querySelector('#table-score');
 const nombre = document.querySelector('#nombre-jugador');
+const imgPlayer = document.querySelector('#imgplayer');
+const imgCpu = document.querySelector('#imgcpu');
 // const div = document.querySelector('#btn-jugador');
 
 let JUGADOR = 0;
@@ -41,15 +43,24 @@ comenzar.addEventListener('click', () => {
 });
 
 piedra.addEventListener('click', () => {
+  imgPlayer.src = './img/piedra.png';
+  imgPlayer.width = 50;
+  imgPlayer.height = 50;
   const num = Number(Math.round(Math.random() * 2));
   switch (true) {
     case num === 0:
+      imgCpu.src = './img/piedra.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = 'white';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Empate`;
       scorePlayer.innerHTML = `${JUGADOR}`;
       scoreCpu.innerHTML = `${CPU}`;
       break;
     case num === 1:
+      imgCpu.src = './img/papel.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = 'red';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. La maquina gana`;
       CPU++;
@@ -57,6 +68,9 @@ piedra.addEventListener('click', () => {
       scoreCpu.innerHTML = `${CPU}`;
       break;
     case num === 2:
+      imgCpu.src = './img/tijera.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = '#7fff00';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Tu ganas`;
       JUGADOR++;
@@ -84,9 +98,15 @@ piedra.addEventListener('click', () => {
 });
 
 papel.addEventListener('click', () => {
+  imgPlayer.src = './img/papel.png';
+  imgPlayer.width = 50;
+  imgPlayer.height = 50;
   const num = Number(Math.round(Math.random() * 2));
   switch (true) {
     case num === 0:
+      imgCpu.src = './img/piedra.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = '#7fff00';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Tu ganas`;
       JUGADOR++;
@@ -95,6 +115,9 @@ papel.addEventListener('click', () => {
 
       break;
     case num === 1:
+      imgCpu.src = './img/papel.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = 'white';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Empate`;
       scorePlayer.innerHTML = `${JUGADOR}`;
@@ -102,6 +125,9 @@ papel.addEventListener('click', () => {
 
       break;
     case num === 2:
+      imgCpu.src = './img/tijera.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = 'red';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. La maquina gana`;
       CPU++;
@@ -129,9 +155,15 @@ papel.addEventListener('click', () => {
 });
 
 tijera.addEventListener('click', () => {
+  imgPlayer.src = './img/tijera.png';
+  imgPlayer.width = 50;
+  imgPlayer.height = 50;
   const num = Number(Math.round(Math.random() * 2));
   switch (true) {
     case num === 0:
+      imgCpu.src = './img/piedra.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = 'red';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. La maquina gana`;
       CPU++;
@@ -139,6 +171,9 @@ tijera.addEventListener('click', () => {
       scoreCpu.innerHTML = `${CPU}`;
       break;
     case num === 1:
+      imgCpu.src = './img/papel.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = '#7fff00';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Tu ganas`;
       JUGADOR++;
@@ -146,6 +181,9 @@ tijera.addEventListener('click', () => {
       scoreCpu.innerHTML = `${CPU}`;
       break;
     case num === 2:
+      imgCpu.src = './img/tijera.png';
+      imgCpu.width = 50;
+      imgCpu.height = 50;
       texto.style.color = 'white';
       texto.innerHTML = `La maquina ha elegido ${array[num]}. Empate`;
       scorePlayer.innerHTML = `${JUGADOR}`;
