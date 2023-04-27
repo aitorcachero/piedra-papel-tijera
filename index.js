@@ -10,6 +10,7 @@ const score = document.querySelector('#table-score');
 const nombre = document.querySelector('#nombre-jugador');
 const imgPlayer = document.querySelector('#imgplayer');
 const imgCpu = document.querySelector('#imgcpu');
+const imagenes = document.querySelector('#imagenes');
 // const div = document.querySelector('#btn-jugador');
 
 let JUGADOR = 0;
@@ -38,6 +39,7 @@ comenzar.addEventListener('click', () => {
   scorePlayer.style.opacity = 1;
   scoreCpu.style.opacity = 1;
   score.style.opacity = 1;
+  imagenes.style.opacity = 1;
   // comenzar.parentNode.removeChild(comenzar);
   preguntarNombre();
 });
@@ -230,6 +232,12 @@ terminar.addEventListener('click', () => {
   scoreCpu.style.opacity = 0;
   texto.innerHTML = '';
   score.style.opacity = 0;
+  imagenes.style.opacity = 0;
+  imgPlayer.width = 0;
+  imgPlayer.height = 0;
+  imgCpu.width = 0;
+  imgCpu.height = 0;
+
   JUGADOR = 0;
   CPU = 0;
 });

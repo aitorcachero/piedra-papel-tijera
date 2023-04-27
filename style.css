@@ -90,6 +90,10 @@ h1 {
   margin: 1rem;
 }
 
+#imagenes {
+  opacity: 0;
+}
+
 #img-jugador {
   border: 1px solid black;
   width: 5rem;
