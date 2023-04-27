@@ -237,7 +237,7 @@ terminar.addEventListener('click', () => {
   imgPlayer.height = 0;
   imgCpu.width = 0;
   imgCpu.height = 0;
-
+  nombre.innerHTML = null;
   JUGADOR = 0;
   CPU = 0;
 });
